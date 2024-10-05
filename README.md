@@ -1,69 +1,73 @@
-URL Shortener with Analytics
-A simple URL-shortening service built with Node.js, Express, and MongoDB. This application allows users to:
+<h1 align="center">🌐 URL Shortener with Analytics</h1> <h3 align="center">A simple yet powerful URL-shortening service built with Node.js, Express, and MongoDB</h3> <p align="center"> <img src="https://img.shields.io/badge/Node.js-16-green?logo=node.js&style=for-the-badge"/> <img src="https://img.shields.io/badge/Express-4.x-blue?logo=express&style=for-the-badge"/> <img src="https://img.shields.io/badge/MongoDB-5.x-green?logo=mongodb&style=for-the-badge"/> <img src="https://img.shields.io/badge/Mongoose-6.x-red?logo=mongodb&style=for-the-badge"/> </p>
+<h2>🚀 Features</h2>
+<ul>
+    <li>✨ <strong>URL Shortening</strong>: Generate short URLs for any provided long URL.</li>
+    <li>🔗 <strong>URL Redirection</strong>: Use the short URL to redirect to the original URL.</li>
+    <li>📊 <strong>Analytics</strong>: Track how many times the short URL has been clicked and log the timestamps of each access.</li>
+    <li>🌐 <strong>RESTful API</strong>: Provides endpoints for URL shortening, redirection, and analytics.</li>
+</ul>
+<h2>🛠 Technologies Used</h2>
+<p align="left">
+    <a href="https://nodejs.org/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" width="40" height="40"/>
+    </a> 
+    <strong>Node.js</strong>
+    <br><br>
+    <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="Express.js" width="40" height="40"/>
+    </a> 
+    <strong>Express.js</strong>
+    <br><br>
+    <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" width="40" height="40"/>
+    </a> 
+    <strong>MongoDB</strong>
+    <br><br>
+    <a href="https://mongoosejs.com/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="Mongoose" width="40" height="40"/>
+    </a> 
+    <strong>Mongoose</strong>
+    <br><br>
+    <a href="https://www.npmjs.com/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg" alt="npm" width="40" height="40"/>
+    </a> 
+    <strong>npm</strong>
+</p>
+<h2>📦 Getting Started</h2>
+<p>Follow these instructions to set up the project locally.</p>
 
-Generate short URLs for any long URL.
-Retrieve the original URL using the short link.
-Track analytics on how many times the short URL has been clicked, including the timestamps of each access.
-🚀 Features
-URL Shortening: Generate a short URL for any provided long URL.
-URL Redirection: Use the short URL to redirect to the original URL.
-Analytics: Track how many times the short URL has been clicked and log the timestamps of each access.
-RESTful API: Exposes REST endpoints for generating short URLs, retrieving the original URL, and accessing analytics data.
-🛠 Technologies Used
-Node.js: Backend runtime environment.
-Express: Web framework for building REST APIs.
-MongoDB: Database to store URLs and analytics data.
-Mongoose: Object Data Modeling (ODM) library for MongoDB.
-shortid: Library to generate short unique IDs.
-📝 Getting Started
-Follow these instructions to set up the project locally.
+<h3>Prerequisites</h3>
+<ul>
+    <li>Node.js (v12+)</li>
+    <li>MongoDB (Installed locally or hosted on a cloud service)</li>
+    <li>npm (Node Package Manager)</li>
+</ul>
 
-Prerequisites
-Node.js (v12+)
-MongoDB (Installed and running locally or on a cloud service)
-npm (Node Package Manager)
-📦 Installation
-Clone the repository:
-
-bash
-Copy code
+<h3>Installation</h3>
+<ol>
+    <li><strong>Clone the repository:</strong></li>
+    <pre>
+        <code>
 git clone https://github.com/your-username/url-shortener.git
 cd url-shortener
-Install the dependencies:
-
-bash
-Copy code
-npm install
-Set up environment variables:
-
-Create a .env file in the root directory of your project:
-env
-Copy code
+        </code>
+    </pre>
+    <li><strong>Install the dependencies:</strong></li>
+    <pre>
+        <code>npm install</code>
+    </pre>
+    <li><strong>Set up environment variables:</strong></li>
+    <p>Create a <code>.env</code> file in the root directory of your project:</p>
+    <pre>
+        <code>
 MONGODB_URI=mongodb://localhost:27017/short-url
 PORT=8001
-Replace the MONGODB_URI with the URI of your MongoDB instance if it's different.
-Start the application:
+        </code>
+    </pre>
+    <li><strong>Start the application:</strong></li>
+    <pre>
+        <code>npm start</code>
+    </pre>
+</ol>
 
-bash
-Copy code
-npm start
-The server should now be running at http://localhost:8001.
-
-📂 Project Structure
-graphql
-Copy code
-url-shortener/
-│
-├── controllers/
-│   └── url.js          # Contains logic for handling URL generation and analytics
-│
-├── models/
-│   └── url.js          # Mongoose schema for storing URLs and visit history
-│
-├── routes/
-│   └── url.js          # Express routes for URL-related endpoints
-│
-├── .env                # Environment variables
-├── index.js            # Main entry point of the application
-└── README.md           # Project documentation
-
+<p>The server should now be running at <a href="http://localhost:8001" target="_blank">http://localhost:8001</a>.</p>
