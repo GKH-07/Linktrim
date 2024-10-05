@@ -4,8 +4,8 @@ const urlSchema = new mongoose.Schema(
     {
         shortId: {
             type: String,
-            required: true,
             unique: true,
+            required: true,
         },
         redirectURL: {
             type: String,
