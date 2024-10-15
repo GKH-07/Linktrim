@@ -48,7 +48,7 @@
     <li><strong>Clone the repository:</strong></li>
     <pre>
         <code>
-git clone https://github.com/your-username/url-shortener.git
+git clone https://github.com/GKH-07/Linktrim.git
 cd url-shortener
         </code>
     </pre>
